@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<scrip type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></scrip>
+		<!--scripts dos graficos-->
+		<scrip type="text/javascript" src="graficoBarrasAnos.js"></scrip>
+		
+		<!--callbacks das funções dos graficos-->
+		<script>
+			google.charts.load('current', {'packages':['corechart'],
+				'language': 'pt'});
+			google.charts.setOnLoadCallback(desenharGraficoBarrasAnos);
+		</script>
+
+	</head>
+	<body>
+
+		<div id="graficoBarrasAnos"></div>	
+
+	</body>
+</html>
